@@ -46,7 +46,7 @@ func main() {
     // value.  In this example, the variable `t` will have the
     // type corresponding to its clause.
     whatAmI := func(i interface{}) {
-        switch t := i.(type) {
+        switch i.(type) {
         case bool:
             fmt.Println("I'm a bool")
         case int:
